@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Revudeville';
+    src: url('Revudeville.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Revudeville', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #EFFAFD; 
+    color: #A0006D; 
+    padding: 30px;
+}
+
+
+h1 {
+    font-size: 64px;
+    color: #4A8BDF; 
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  
+    text-shadow: 
+        3px 3px 0px #A0006D,
+        6px 6px 0px rgba(160, 0, 109, 0.25);
+}
+
+
+h1::before,
+h1::after {
+    content: " 🐾 ";
+    font-size: 48px;
+}
+
+label, #mensagem {
+    font-size: 24px;
+    margin: 10px;
+    display: inline-block;
+    color: #A0006D;
+}
+
+select, input, button {
+    font-size: 20px;
+    padding: 8px 14px;
+    margin: 8px;
+    border: 2px solid #4A8BDF;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    color: #A0006D;
+}
+
+button {
+    background-color: #A0006D; 
+    color: #EFFAFD;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #4A8BDF; 
+    transition: transform 0.1s;
+}
+
+button:hover {
+    background-color: #4A8BDF;
+    color: #EFFAFD;
+    box-shadow: 0 4px 0 #A0006D;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 4px solid #4A8BDF;
+    box-shadow: 6px 6px 0px #A0006D; 
+    margin: 20px;
+}
